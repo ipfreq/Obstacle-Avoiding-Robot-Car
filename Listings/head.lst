@@ -1,0 +1,110 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;head.s
+    2 00000000         ;Function to initialize trigger pin of ultrasonic
+    3 00000000         ;/**(head) sensor
+    4 00000000         
+    5 00000000         
+    6 00000000 40004400 
+                       GPIO_PORTA_DIR_R
+                               EQU              0x40004400
+    7 00000000 4000451C 
+                       GPIO_PORTA_DEN_R
+                               EQU              0x4000451C
+    8 00000000 400FE608 
+                       SYSCTL_RCGCGPIO_R
+                               EQU              0x400FE608
+    9 00000000         
+   10 00000000                 AREA             |.text|, CODE, READONLY, ALIGN=
+2
+   11 00000000                 THUMB
+   12 00000000                 EXPORT           HEAD_Init
+   13 00000000         
+   14 00000000         HEAD_Init
+   15 00000000 4907            LDR              R1,=SYSCTL_RCGCGPIO_R
+   16 00000002 6808            LDR              R0,[R1]
+   17 00000004 F040 0001       ORR              R0,R0,#0x01
+   18 00000008 6008            STR              R0,[R1]
+   19 0000000A         
+   20 0000000A 4906            LDR              R1,=GPIO_PORTA_DIR_R
+   21 0000000C 6808            LDR              R0,[R1]
+   22 0000000E F040 0010       ORR              R0,R0,#0x10
+   23 00000012 6008            STR              R0,[R1]
+   24 00000014         
+   25 00000014 4904            LDR              R1,=GPIO_PORTA_DEN_R
+   26 00000016 6808            LDR              R0,[R1]
+   27 00000018 F040 0010       ORR              R0,R0,#0x10
+   28 0000001C 6008            STR              R0,[R1]
+   29 0000001E 4770            BX               LR
+   30 00000020         
+   31 00000020                 ALIGN
+   32 00000020                 END
+              400FE608 
+              40004400 
+              4000451C 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\objects\head_1.d -o.\objects\head_1.o -I.\RTE\_TM4C123 -IC:\U
+sers\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include -IC:\Users
+\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123 --pred
+efine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 527" --predefine="_RT
+E_ SETA 1" --predefine="TM4C1230H6PM SETA 1" --list=.\listings\head.lst Librari
+es&Drivers\head.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 10 in file Libraries&Drivers\head.s
+   Uses
+      None
+Comment: .text unused
+HEAD_Init 00000000
+
+Symbol: HEAD_Init
+   Definitions
+      At line 14 in file Libraries&Drivers\head.s
+   Uses
+      At line 12 in file Libraries&Drivers\head.s
+Comment: HEAD_Init used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+GPIO_PORTA_DEN_R 4000451C
+
+Symbol: GPIO_PORTA_DEN_R
+   Definitions
+      At line 7 in file Libraries&Drivers\head.s
+   Uses
+      At line 25 in file Libraries&Drivers\head.s
+Comment: GPIO_PORTA_DEN_R used once
+GPIO_PORTA_DIR_R 40004400
+
+Symbol: GPIO_PORTA_DIR_R
+   Definitions
+      At line 6 in file Libraries&Drivers\head.s
+   Uses
+      At line 20 in file Libraries&Drivers\head.s
+Comment: GPIO_PORTA_DIR_R used once
+SYSCTL_RCGCGPIO_R 400FE608
+
+Symbol: SYSCTL_RCGCGPIO_R
+   Definitions
+      At line 8 in file Libraries&Drivers\head.s
+   Uses
+      At line 15 in file Libraries&Drivers\head.s
+Comment: SYSCTL_RCGCGPIO_R used once
+3 symbols
+342 symbols in table

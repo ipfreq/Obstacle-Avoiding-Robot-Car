@@ -1,0 +1,147 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;#define IR_PIN   (1U<<5)//PA5 (INPUT)
+    2 00000000         ;portA clock
+    3 00000000         ;set PA5 as input
+    4 00000000         ;Enable PA5
+    5 00000000         ;Check PortA data register to see if PA5 is high
+    6 00000000 40004400 
+                       GPIO_PORTA_DIR_R
+                               EQU              0x40004400
+    7 00000000 4000451C 
+                       GPIO_PORTA_DEN_R
+                               EQU              0x4000451C
+    8 00000000 400FE608 
+                       SYSCTL_RCGCGPIO_R
+                               EQU              0x400FE608
+    9 00000000 400043FC 
+                       GPIO_PORTA_DATA_R
+                               EQU              0x400043FC
+   10 00000000         
+   11 00000000                 AREA             |.text|, CODE, READONLY, ALIGN=
+2
+   12 00000000                 THUMB
+   13 00000000                 EXPORT           TAIL_Init
+   14 00000000                 EXPORT           TAIL_sense
+   15 00000000         
+   16 00000000         TAIL_Init
+   17 00000000 490A            LDR              R1, =SYSCTL_RCGCGPIO_R
+   18 00000002 6808            LDR              R0,[R1]
+   19 00000004 F040 0001       ORR              R0,R0,#0x01
+   20 00000008 6008            STR              R0,[R1]
+   21 0000000A         
+   22 0000000A 4909            LDR              R1,=GPIO_PORTA_DIR_R
+   23 0000000C 6808            LDR              R0,[R1]
+   24 0000000E F040 0000       ORR              R0,R0,#0x00
+   25 00000012         ;MOV R0,#0x00
+   26 00000012 6008            STR              R0,[R1]
+   27 00000014         
+   28 00000014 4907            LDR              R1,=GPIO_PORTA_DEN_R
+   29 00000016 6808            LDR              R0,[R1]
+   30 00000018 F040 0020       ORR              R0,R0,#0x20
+   31 0000001C         ;MOV R0,#0x20
+   32 0000001C 6008            STR              R0,[R1]
+   33 0000001E 4770            BX               LR
+   34 00000020         
+   35 00000020         TAIL_sense
+   36 00000020 4905            LDR              R1,=GPIO_PORTA_DATA_R
+   37 00000022 6808            LDR              R0,[R1]
+   38 00000024 F000 0020       AND              R0,R0,#0x20
+   39 00000028 4770            BX               LR
+   40 0000002A         
+   41 0000002A         
+   42 0000002A         
+   43 0000002A 00 00           ALIGN
+   44 0000002C                 END
+              400FE608 
+              40004400 
+              4000451C 
+              400043FC 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\objects\tail.d -o.\objects\tail.o -I.\RTE\_TM4C123 -IC:\Users
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include -IC:\Users\Emi
+t\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123 --predefin
+e="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 527" --predefine="_RTE_ S
+ETA 1" --predefine="TM4C1230H6PM SETA 1" --list=.\listings\tail.lst Libraries&D
+rivers\tail.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 11 in file Libraries&Drivers\tail.s
+   Uses
+      None
+Comment: .text unused
+TAIL_Init 00000000
+
+Symbol: TAIL_Init
+   Definitions
+      At line 16 in file Libraries&Drivers\tail.s
+   Uses
+      At line 13 in file Libraries&Drivers\tail.s
+Comment: TAIL_Init used once
+TAIL_sense 00000020
+
+Symbol: TAIL_sense
+   Definitions
+      At line 35 in file Libraries&Drivers\tail.s
+   Uses
+      At line 14 in file Libraries&Drivers\tail.s
+Comment: TAIL_sense used once
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+GPIO_PORTA_DATA_R 400043FC
+
+Symbol: GPIO_PORTA_DATA_R
+   Definitions
+      At line 9 in file Libraries&Drivers\tail.s
+   Uses
+      At line 36 in file Libraries&Drivers\tail.s
+Comment: GPIO_PORTA_DATA_R used once
+GPIO_PORTA_DEN_R 4000451C
+
+Symbol: GPIO_PORTA_DEN_R
+   Definitions
+      At line 7 in file Libraries&Drivers\tail.s
+   Uses
+      At line 28 in file Libraries&Drivers\tail.s
+Comment: GPIO_PORTA_DEN_R used once
+GPIO_PORTA_DIR_R 40004400
+
+Symbol: GPIO_PORTA_DIR_R
+   Definitions
+      At line 6 in file Libraries&Drivers\tail.s
+   Uses
+      At line 22 in file Libraries&Drivers\tail.s
+Comment: GPIO_PORTA_DIR_R used once
+SYSCTL_RCGCGPIO_R 400FE608
+
+Symbol: SYSCTL_RCGCGPIO_R
+   Definitions
+      At line 8 in file Libraries&Drivers\tail.s
+   Uses
+      At line 17 in file Libraries&Drivers\tail.s
+Comment: SYSCTL_RCGCGPIO_R used once
+4 symbols
+344 symbols in table

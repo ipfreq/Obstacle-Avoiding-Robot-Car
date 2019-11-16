@@ -1,0 +1,95 @@
+Dependencies for Project 'ViXen', Target 'TM4C123': (DO NOT MODIFY !)
+F (.\main.c)(0x5953584B)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Libraries&Drivers-I.\RTE\_TM4C123-IC:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="527" -D_RTE_ -DTM4C1230H6PM-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h)(0x550FE22C)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm4.h)(0x5D25E516)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6E406)
+I (.\Libraries&Drivers\neck.h)(0x57E4A652)
+I (.\Libraries&Drivers\head.h)(0x57E4A4E7)
+I (.\Libraries&Drivers\tail.h)(0x57D75082)
+I (.\Libraries&Drivers\limbs.h)(0x57E4B17E)
+I (.\Libraries&Drivers\lights.h)(0x57D74CD5)
+I (.\Libraries&Drivers\delay.h)(0x57DF1F4A)
+I (.\Libraries&Drivers\play_around.h)(0x5DCF705A)
+F (.\Libraries&Drivers\head.c)(0x5A0C9D39)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Libraries&Drivers-I.\RTE\_TM4C123-IC:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="527" -D_RTE_ -DTM4C1230H6PM-o .\objects\head.o --omf_browse .\objects\head.crf --depend .\objects\head.d)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h)(0x550FE22C)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm4.h)(0x5D25E516)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6E406)
+I (Libraries&Drivers\head.h)(0x57E4A4E7)
+I (Libraries&Drivers\delay.h)(0x57DF1F4A)
+F (.\Libraries&Drivers\head.h)(0x57E4A4E7)()
+F (.\Libraries&Drivers\head.s)(0x5A0AE83B)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_TM4C123-IC:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "TM4C1230H6PM SETA 1"--list .\listings\head.lst --xref -o .\objects\head_1.o --depend .\objects\head_1.d)
+F (.\Libraries&Drivers\neck.c)(0x57E4A5D1)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Libraries&Drivers-I.\RTE\_TM4C123-IC:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="527" -D_RTE_ -DTM4C1230H6PM-o .\objects\neck.o --omf_browse .\objects\neck.crf --depend .\objects\neck.d)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h)(0x550FE22C)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm4.h)(0x5D25E516)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6E406)
+I (Libraries&Drivers\delay.h)(0x57DF1F4A)
+F (.\Libraries&Drivers\neck.h)(0x57E4A652)()
+F (.\Libraries&Drivers\limbs.c)(0x57E4AF8A)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Libraries&Drivers-I.\RTE\_TM4C123-IC:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="527" -D_RTE_ -DTM4C1230H6PM-o .\objects\limbs.o --omf_browse .\objects\limbs.crf --depend .\objects\limbs.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (Libraries&Drivers\limbs.h)(0x57E4B17E)
+I (Libraries&Drivers\delay.h)(0x57DF1F4A)
+F (.\Libraries&Drivers\limbs.h)(0x57E4B17E)()
+F (.\Libraries&Drivers\limbs.s)(0x57DF3153)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_TM4C123-IC:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "TM4C1230H6PM SETA 1"--list .\listings\limbs.lst --xref -o .\objects\limbs_1.o --depend .\objects\limbs_1.d)
+F (.\Libraries&Drivers\tail.h)(0x57D75082)()
+F (.\Libraries&Drivers\tail.s)(0x57D740B9)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_TM4C123-IC:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "TM4C1230H6PM SETA 1"--list .\listings\tail.lst --xref -o .\objects\tail.o --depend .\objects\tail.d)
+F (.\Libraries&Drivers\lights.h)(0x57D74CD5)()
+F (.\Libraries&Drivers\lights.s)(0x57D9BC98)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_TM4C123-IC:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "TM4C1230H6PM SETA 1"--list .\listings\lights.lst --xref -o .\objects\lights.o --depend .\objects\lights.d)
+F (.\Libraries&Drivers\delay.c)(0x5A0C9D39)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Libraries&Drivers-I.\RTE\_TM4C123-IC:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="527" -D_RTE_ -DTM4C1230H6PM-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h)(0x550FE22C)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm4.h)(0x5D25E516)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6E406)
+I (Libraries&Drivers\delay.h)(0x57DF1F4A)
+I (Libraries&Drivers\head.h)(0x57E4A4E7)
+I (Libraries&Drivers\limbs.h)(0x57E4B17E)
+I (Libraries&Drivers\play_around.h)(0x5DCF705A)
+I (Libraries&Drivers\tail.h)(0x57D75082)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599F218C)
+F (.\Libraries&Drivers\delay.h)(0x57DF1F4A)()
+F (.\Libraries&Drivers\play_around.c)(0x5953456B)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Libraries&Drivers-I.\RTE\_TM4C123-IC:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="527" -D_RTE_ -DTM4C1230H6PM-o .\objects\play_around.o --omf_browse .\objects\play_around.crf --depend .\objects\play_around.d)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123GH6PM.h)(0x550FE22C)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm4.h)(0x5D25E516)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6E406)
+I (Libraries&Drivers\delay.h)(0x57DF1F4A)
+I (Libraries&Drivers\play_around.h)(0x5DCF705A)
+I (Libraries&Drivers\limbs.h)(0x57E4B17E)
+I (Libraries&Drivers\head.h)(0x57E4A4E7)
+I (Libraries&Drivers\lights.h)(0x57D74CD5)
+I (Libraries&Drivers\neck.h)(0x57E4A652)
+F (.\Libraries&Drivers\play_around.h)(0x5DCF705A)()
+F (.\Libraries&Drivers\pin_connections.txt)(0x57DD75D0)()
+F (RTE\Device\TM4C1230H6PM\startup_TM4C123.s)(0x51B68FA6)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_TM4C123-IC:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "TM4C1230H6PM SETA 1"--list .\listings\startup_tm4c123.lst --xref -o .\objects\startup_tm4c123.o --depend .\objects\startup_tm4c123.d)
+F (RTE\Device\TM4C1230H6PM\system_TM4C123.c)(0x550A117A)(-c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Libraries&Drivers-I.\RTE\_TM4C123-IC:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123-D__UVISION_VERSION="527" -D_RTE_ -DTM4C1230H6PM-o .\objects\system_tm4c123.o --omf_browse .\objects\system_tm4c123.crf --depend .\objects\system_tm4c123.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F218E)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C123.h)(0x530EF2F6)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\TM4C1230H6PM.h)(0x550FE22C)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\core_cm4.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_version.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5D25E516)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include\mpu_armv7.h)(0x5C8FA234)
+I (C:\Users\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123\system_TM4C123.h)(0x51B6E406)

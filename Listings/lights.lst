@@ -1,0 +1,194 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;lights.s
+    2 00000000         ;Function to initial pins for LEDS
+    3 00000000 400FE608 
+                       SYSCTL_RCGCGPIO_R
+                               EQU              0x400FE608
+    4 00000000 400253FC 
+                       GPIO_PORTF_DATA_R
+                               EQU              0x400253FC
+    5 00000000 40025400 
+                       GPIO_PORTF_DIR_R
+                               EQU              0x40025400
+    6 00000000 4002551C 
+                       GPIO_PORTF_DEN_R
+                               EQU              0x4002551C
+    7 00000000 400043FC 
+                       GPIO_PORTA_DATA_R
+                               EQU              0x400043FC
+    8 00000000 40025510 
+                       GPIO_PORTF_PUR_R
+                               EQU              0x40025510
+    9 00000000 40025520 
+                       GPIO_PORTF_LOCK_R
+                               EQU              0x40025520
+   10 00000000 40025524 
+                       GPIO_PORTF_CR_R
+                               EQU              0x40025524
+   11 00000000 4C4F434B 
+                       GPIO_LOCK_KEY
+                               EQU              0x4C4F434B
+   12 00000000         
+   13 00000000                 AREA             |.text|, CODE,READONLY,ALIGN=2
+   14 00000000                 THUMB
+   15 00000000                 EXPORT           LIGHTS_Init
+   16 00000000         
+   17 00000000         LIGHTS_Init
+   18 00000000         ;TODO -  Take out code for
+   19 00000000         ;btn_init later
+   20 00000000 490A            LDR              R1,=SYSCTL_RCGCGPIO_R
+   21 00000002 6808            LDR              R0,[R1]
+   22 00000004 F040 0020       ORR              R0,R0,#0x20
+   23 00000008 6008            STR              R0,[R1]
+   24 0000000A         
+   25 0000000A 4909            LDR              R1,=GPIO_PORTF_LOCK_R
+   26 0000000C 4809            LDR              R0,=0x4C4F434B
+   27 0000000E 6008            STR              R0,[R1]
+   28 00000010         
+   29 00000010 4909            LDR              R1,=GPIO_PORTF_CR_R
+   30 00000012 F04F 00FF       MOV              R0,#0xFF
+   31 00000016 6008            STR              R0,[R1]
+   32 00000018         
+   33 00000018 4908            LDR              R1,=GPIO_PORTF_DIR_R
+   34 0000001A F04F 000E       MOV              R0,#0x0E
+   35 0000001E 6008            STR              R0,[R1]
+   36 00000020         
+   37 00000020 4907            LDR              R1,=GPIO_PORTF_DEN_R
+   38 00000022 F04F 00FF       MOV              R0,#0xFF
+   39 00000026 6008            STR              R0,[R1]
+   40 00000028 4770            BX               LR
+   41 0000002A 00 00           ALIGN
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+   42 0000002C                 END
+              400FE608 
+              40025520 
+              4C4F434B 
+              40025524 
+              40025400 
+              4002551C 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\objects\lights.d -o.\objects\lights.o -I.\RTE\_TM4C123 -IC:\U
+sers\Emit\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include -IC:\Users
+\Emit\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123 --pred
+efine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 527" --predefine="_RT
+E_ SETA 1" --predefine="TM4C1230H6PM SETA 1" --list=.\listings\lights.lst Libra
+ries&Drivers\lights.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 13 in file Libraries&Drivers\lights.s
+   Uses
+      None
+Comment: .text unused
+LIGHTS_Init 00000000
+
+Symbol: LIGHTS_Init
+   Definitions
+      At line 17 in file Libraries&Drivers\lights.s
+   Uses
+      At line 15 in file Libraries&Drivers\lights.s
+Comment: LIGHTS_Init used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+GPIO_LOCK_KEY 4C4F434B
+
+Symbol: GPIO_LOCK_KEY
+   Definitions
+      At line 11 in file Libraries&Drivers\lights.s
+   Uses
+      None
+Comment: GPIO_LOCK_KEY unused
+GPIO_PORTA_DATA_R 400043FC
+
+Symbol: GPIO_PORTA_DATA_R
+   Definitions
+      At line 7 in file Libraries&Drivers\lights.s
+   Uses
+      None
+Comment: GPIO_PORTA_DATA_R unused
+GPIO_PORTF_CR_R 40025524
+
+Symbol: GPIO_PORTF_CR_R
+   Definitions
+      At line 10 in file Libraries&Drivers\lights.s
+   Uses
+      At line 29 in file Libraries&Drivers\lights.s
+Comment: GPIO_PORTF_CR_R used once
+GPIO_PORTF_DATA_R 400253FC
+
+Symbol: GPIO_PORTF_DATA_R
+   Definitions
+      At line 4 in file Libraries&Drivers\lights.s
+   Uses
+      None
+Comment: GPIO_PORTF_DATA_R unused
+GPIO_PORTF_DEN_R 4002551C
+
+Symbol: GPIO_PORTF_DEN_R
+   Definitions
+      At line 6 in file Libraries&Drivers\lights.s
+   Uses
+      At line 37 in file Libraries&Drivers\lights.s
+Comment: GPIO_PORTF_DEN_R used once
+GPIO_PORTF_DIR_R 40025400
+
+Symbol: GPIO_PORTF_DIR_R
+   Definitions
+      At line 5 in file Libraries&Drivers\lights.s
+   Uses
+      At line 33 in file Libraries&Drivers\lights.s
+Comment: GPIO_PORTF_DIR_R used once
+GPIO_PORTF_LOCK_R 40025520
+
+Symbol: GPIO_PORTF_LOCK_R
+   Definitions
+      At line 9 in file Libraries&Drivers\lights.s
+   Uses
+      At line 25 in file Libraries&Drivers\lights.s
+Comment: GPIO_PORTF_LOCK_R used once
+GPIO_PORTF_PUR_R 40025510
+
+Symbol: GPIO_PORTF_PUR_R
+
+
+
+ARM Macro Assembler    Page 2 Alphabetic symbol ordering
+Absolute symbols
+
+   Definitions
+      At line 8 in file Libraries&Drivers\lights.s
+   Uses
+      None
+Comment: GPIO_PORTF_PUR_R unused
+SYSCTL_RCGCGPIO_R 400FE608
+
+Symbol: SYSCTL_RCGCGPIO_R
+   Definitions
+      At line 3 in file Libraries&Drivers\lights.s
+   Uses
+      At line 20 in file Libraries&Drivers\lights.s
+Comment: SYSCTL_RCGCGPIO_R used once
+9 symbols
+348 symbols in table
